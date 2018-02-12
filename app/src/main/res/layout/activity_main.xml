@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.dev.insu.mininotes.MainActivity">
+
+    <TextView
+        android:id="@+id/greetingsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:text="@string/greetings"
+        android:textSize="36sp"
+        android:padding="16dp"
+        android:background="@drawable/gradient1"
+        android:textColor="#000000"
+        android:translationZ="10dp"/>
+
+   
+
+    <android.support.v7.widget.RecyclerView
+        android:paddingTop="64dp"
+        android:clipToPadding="false"
+        android:id="@+id/notesList"
+        android:layout_above="@id/quickNoteCard"
+        android:scrollbars="vertical"
+        android:layout_marginHorizontal="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="8dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="3dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/quickNoteCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:fontFamily="@font/roboto_slab_light"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:id="@+id/quickNoteText"
+                android:layout_centerVertical="true"
+                android:hint="Dodaj szybką notkę"/>
+            <ImageButton
+                android:id="@+id/doneBtn"
+                android:padding="4dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp" 
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_done_black_32px"
+                android:background="@null"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_centerVertical="true"
+                
+                />
+            <ImageButton
+
+                android:layout_centerVertical="true"
+                android:id="@+id/moreBtn"
+                android:padding="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_toLeftOf="@id/doneBtn"
+                android:background="@null"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:src="@drawable/ic_more"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

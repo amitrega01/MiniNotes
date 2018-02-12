@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MiniNotes</string>
+    <string name="noTitle">Brak tytułu</string>
+    <string name="title">Tytuł...</string>
+    <string name="yourNote">Twoja notatka...</string>
+    <string name="noContent">Musisz podać treść notatki!</string>
+    <string name="greetings">Witaj Adam</string>
+</resources>

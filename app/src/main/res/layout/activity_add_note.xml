@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.dev.insu.mininotes.AddNote">
+
+    <EditText
+        android:id="@+id/edTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:fontFamily="@font/roboto_slab_bold_local"
+        android:hint="@string/noTitle"
+        android:padding="16dp"
+        android:textSize="36dp" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edTitle"
+        android:fontFamily="@font/roboto_slab_light"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="2017-12-15"
+        android:textColor="#919191"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/edContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvDate"
+        android:background="@null"
+        android:fontFamily="@font/roboto_slab_local"
+        android:gravity="start"
+        android:hint="@string/yourNote"
+        android:padding="16dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_done_black_32px"
+        app:backgroundTint="@color/cardview_light_background"
+        app:fabSize="normal"
+
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/remove"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@id/floatingActionButton"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_delete_black_24px"
+        app:backgroundTint="@color/cardview_light_background"
+        app:fabSize="mini"
+
+        />
+</RelativeLayout>
