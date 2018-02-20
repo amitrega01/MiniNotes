@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/settingsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:text="@string/settings"
+        android:textSize="36sp"
+        android:paddingTop="16dp"
+        android:paddingHorizontal="16dp"
+        android:background="@drawable/gradient1"
+        android:textColor="#000000"/>
+    <RelativeLayout
+        android:paddingLeft="16dp"
+        android:layout_below="@id/settingsText"
+        android:id="@+id/nameSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Twoje imię"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:id="@+id/headerName" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerName"
+            android:text="Adam"
+            android:textSize="14dp"
+            android:paddingLeft="16dp"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,8 +1,15 @@
 <resources>
-    <string name="app_name">MiniNotes</string>
+    <string name="app_name">Notatnik</string>
     <string name="noTitle">Brak tytułu</string>
     <string name="title">Tytuł...</string>
     <string name="yourNote">Twoja notatka...</string>
     <string name="noContent">Musisz podać treść notatki!</string>
     <string name="greetings">Witaj Adam</string>
+    <string name="title_activity_settings">Settings</string>
+
+  
+    <string name="settings">Ustawienia</string>
+    <string name="yes">Tak</string>
+    <string name="no">Nie</string>
+    <string name="deleting">Usuwanie</string>
 </resources>

@@ -1,5 +1,7 @@
 package com.dev.insu.mininotes;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceActivity;
@@ -52,7 +54,21 @@ public class AddNote extends AppCompatActivity {
         remove.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                removeNote();
+                new AlertDialog.Builder(AddNote.this)
+                        .setIcon(R.drawable.ic_warning_black_24px)
+                        .setTitle(getString(R.string.deleting))
+                        .setMessage("Napewno chcesz usunąć tą notatkę?")
+                        .setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener()
+                        {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                removeNote();
+                            }
+
+                        })
+                        .setNegativeButton(getString(R.string.no), null)
+                        .show();
+                
             }
         });
 

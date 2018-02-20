@@ -7,19 +7,34 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context="com.dev.insu.mininotes.MainActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
+        android:translationZ="10dp">
     <TextView
         android:id="@+id/greetingsText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto_slab_bold"
-        android:text="@string/greetings"
+        android:text="@string/app_name"
         android:textSize="36sp"
         android:padding="16dp"
+        android:layout_centerInParent="true"
         android:background="@drawable/gradient1"
-        android:textColor="#000000"
-        android:translationZ="10dp"/>
-
+        android:textColor="#000000"/>
+    
+    <ImageButton
+        android:id="@+id/settingsBtn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_settings"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+        android:translationZ="100dp"    
+        />
+    </RelativeLayout>
    
 
     <android.support.v7.widget.RecyclerView

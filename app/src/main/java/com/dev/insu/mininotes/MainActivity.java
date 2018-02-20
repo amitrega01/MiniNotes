@@ -7,12 +7,9 @@ import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.text.Layout;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import java.text.DateFormat;
@@ -23,12 +20,14 @@ import java.util.Date;
 public class MainActivity extends AppCompatActivity {
     public SharedPreferences sp;
     public SharedPreferences.Editor ed;
+    public RecyclerView rvNotes;
     ArrayList<NoteModel> notes;
     private int maxId;
     private EditText quickNoteText;
     private ImageButton moreBtn;
     private ImageButton doneBtn;
-    public RecyclerView rvNotes;
+    private ImageButton settingsBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,13 +37,15 @@ public class MainActivity extends AppCompatActivity {
         quickNoteText = (EditText) findViewById(R.id.quickNoteText);
         moreBtn = (ImageButton) findViewById(R.id.moreBtn);
         doneBtn = (ImageButton) findViewById(R.id.doneBtn);
-         rvNotes = (RecyclerView) findViewById(R.id.notesList);
+        settingsBtn = (ImageButton) findViewById(R.id.settingsBtn); 
+        rvNotes = (RecyclerView) findViewById(R.id.notesList);
         notes = new ArrayList<NoteModel>();
-        
+
         maxId = sp.getInt("maxID", 0);
-        
+
         updateList(maxId);
-       
+
+      
         
         moreBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                     ed.putString(IDS + "CONTENT", quickNoteText.getText().toString());
                     quickNoteText.setText("");
                     ed.commit();
-                   
+
                     Intent i = new Intent(MainActivity.this, AddNote.class);
                     i.putExtra("ID", maxId);
                     startActivity(i);
@@ -78,18 +79,16 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, getString(R.string.noContent), Toast.LENGTH_SHORT).show();
 
             }
-            
+
         });
 
         doneBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (!quickNoteText.getText().toString().isEmpty()) {
-
-
                     DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
                     String date = df.format(new Date());
-
+                        
                     maxId = sp.getInt("maxID", 0);
                     maxId++;
 
@@ -113,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-     
+
     }
 
 
@@ -121,7 +120,8 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, AddNote.class);
         startActivity(i);
     }
-    public  void updateList(int maxId) {
+
+    public void updateList(int maxId) {
         if (maxId > 0) {
             notes.clear();
             //dodawanie istniejacych notatek do listy
@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
             rvNotes.setLayoutManager(new LinearLayoutManager(this));
             // Create adapter passing in the sample user data
         }
-        
+
 
     }
 
