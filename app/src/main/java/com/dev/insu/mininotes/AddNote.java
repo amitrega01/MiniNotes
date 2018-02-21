@@ -88,7 +88,7 @@ public class AddNote extends AppCompatActivity {
 
                     String IDS = Integer.toString(ID);
 
-                    if (edTitle.getText().toString().isEmpty())
+                    if (edTitle.getText().toString().isEmpty() || edTitle.getText().toString() == "" )
                         ed.putString(IDS + "TITLE", getString(R.string.noTitle));
                     else
                         ed.putString(IDS + "TITLE", edTitle.getText().toString());

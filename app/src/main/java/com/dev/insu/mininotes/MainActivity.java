@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
         quickNoteText = (EditText) findViewById(R.id.quickNoteText);
         moreBtn = (ImageButton) findViewById(R.id.moreBtn);
         doneBtn = (ImageButton) findViewById(R.id.doneBtn);
-        settingsBtn = (ImageButton) findViewById(R.id.settingsBtn); 
         rvNotes = (RecyclerView) findViewById(R.id.notesList);
         notes = new ArrayList<NoteModel>();
 

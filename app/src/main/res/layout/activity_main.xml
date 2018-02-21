@@ -24,16 +24,7 @@
         android:background="@drawable/gradient1"
         android:textColor="#000000"/>
     
-    <ImageButton
-        android:id="@+id/settingsBtn"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_centerInParent="true"
-        android:background="@drawable/ic_settings"
-        android:layout_marginRight="16dp"
-        android:layout_alignParentRight="true"
-        android:translationZ="100dp"    
-        />
+   
     </RelativeLayout>
    
 
@@ -60,25 +51,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <RelativeLayout
-            android:padding="16dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <EditText
                 android:fontFamily="@font/roboto_slab_light"
                 android:background="@null"
-                android:layout_width="wrap_content"
+                android:padding="16dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content" 
                 android:id="@+id/quickNoteText"
+                android:translationZ="-1dp"
                 android:layout_centerVertical="true"
                 android:hint="Dodaj szybką notkę"/>
             <ImageButton
                 android:id="@+id/doneBtn"
+                android:layout_margin="16dp"
                 android:padding="4dp"
                 android:layout_width="32dp"
                 android:layout_height="32dp" 
                 android:layout_alignParentRight="true"
-                android:src="@drawable/ic_done_black_32px"
-                android:background="@null"
+                android:background="@drawable/ic_done_black_32px"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 android:layout_centerVertical="true"
@@ -89,7 +81,7 @@
                 android:layout_centerVertical="true"
                 android:id="@+id/moreBtn"
                 android:padding="8dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginRight="8dp"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_toLeftOf="@id/doneBtn"
