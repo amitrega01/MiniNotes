@@ -62,7 +62,7 @@
                 android:id="@+id/quickNoteText"
                 android:translationZ="-1dp"
                 android:layout_centerVertical="true"
-                android:hint="Dodaj szybką notkę"/>
+                android:hint="@string/addNewNote"/>
             <ImageButton
                 android:id="@+id/doneBtn"
                 android:layout_margin="16dp"

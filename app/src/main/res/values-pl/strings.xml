@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notatnik</string>
+    <string name="noTitle">Brak tytułu</string>
+    <string name="title">Tytuł...</string>
+    <string name="yourNote">Twoja notatka...</string>
+    <string name="noContent">Musisz podać treść notatki</string>
+    <string name="settings">Ustawienia</string>
+    <string name="title_activity_settings">Ustawienia</string>
+    <string name="yes">Tak</string>
+    <string name="no">Nie</string>
+    <string name="deleting">Usuwanie</string>
+    <string name="addNewNote">Dodaj szybką notatkę</string>
+    <string name="question">Napewno chcesz usunąć tą notatkę?</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ноутбук</string>
+    <string name="title">Название...</string>
+    <string name="noTitle">Нет названия</string>
+    <string name="yourNote">Ваша записка ...</string>
+    <string name="noContent">Вы должны ввести содержание примечания</string>
+    <string name="settings">настройки</string>
+    <string name="title_activity_settings">настройки</string>
+    <string name="yes">так</string>
+    <string name="no">не</string>
+    <string name="deleting">удаление</string>
+    <string name="addNewNote">Добавить краткую заметку</string>
+    <string name="question">Вы действительно хотите удалить эту заметку?</string>
+</resources>

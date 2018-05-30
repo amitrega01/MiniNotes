@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_slab_bold_local"
                 android:text="tytuł"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -36,10 +36,10 @@
                 android:layout_below="@id/note_title"
                 android:fontFamily="@font/roboto_slab_local"
                 android:maxLines="3"
-                android:textSize="14dp" />
+                android:textSize="14sp" />
 
             <TextView
-                android:textSize="12dp"
+                android:textSize="12sp"
                 android:id="@+id/note_date"
                 android:fontFamily="@font/roboto_slab_light"
                 android:layout_alignBaseline="@id/note_title"

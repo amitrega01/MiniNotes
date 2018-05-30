@@ -57,7 +57,7 @@ public class AddNote extends AppCompatActivity {
                 new AlertDialog.Builder(AddNote.this)
                         .setIcon(R.drawable.ic_warning_black_24px)
                         .setTitle(getString(R.string.deleting))
-                        .setMessage("Napewno chcesz usunąć tą notatkę?")
+                        .setMessage(R.string.question)
                         .setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener()
                         {
                             @Override

@@ -15,7 +15,7 @@
         android:fontFamily="@font/roboto_slab_bold_local"
         android:hint="@string/noTitle"
         android:padding="16dp"
-        android:textSize="36dp" />
+        android:textSize="36sp" />
 
     <TextView
         android:id="@+id/tvDate"
@@ -27,7 +27,7 @@
         android:padding="2dp"
         android:text="2017-12-15"
         android:textColor="#919191"
-        android:textSize="12dp" />
+        android:textSize="12sp" />
 
     <EditText
         android:id="@+id/edContent"
