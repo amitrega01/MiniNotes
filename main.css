@@ -39,7 +39,7 @@ h2 {
     font-size: 2vw;
     font-weight: 100;
     text-align: left;
-    line-height: 1.5vw;
+    line-height: 1.5EM;
 }
 #contactRow {
     position: relative;
