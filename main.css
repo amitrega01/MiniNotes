@@ -2,6 +2,8 @@ body {
     background: #000;
     font-family: 'Roboto Slab', serif;
     scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -17,11 +19,10 @@ h2 {
 #photos {
     width: 100%;
     margin-top: 32px;
-    display: flex;
-    flex-direction: row;
+   
 }
 #photos .item {
-    flex: 1;
+  float: left;
 }
 
 #photos .item img {    
@@ -31,6 +32,8 @@ h2 {
     padding-left: 32px;
 }
 #photos .item p {
+    float: left;
+    max-width: 250px;
     color: white;
     font-size: 2em;
     font-weight: 100;
