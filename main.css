@@ -1,3 +1,69 @@
 body {
-    background: #04003d;
+    background: #000;
+    font-family: 'Roboto Slab', serif;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    color: white;
+   font-size: 10em;
+}
+h2 {
+    color: white;
+   font-size: 4em;
+   font-weight: 100;
+
+}
+#photos {
+    width: 100%;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+}
+#photos .item {
+    flex: 1;
+}
+
+#photos .item img {    
+    float: left;
+    height: 400px;
+    width: auto;
+    padding-left: 32px;
+}
+#photos .item p {
+    color: white;
+    font-size: 2em;
+    font-weight: 100;
+    text-align: left;
+    line-height: 1.5em;
+}
+#contactRow {
+    position: relative;
+    margin-bottom: 64px;
+    top: 32px;
+    width: 100%;    
+}
+#contactRow #googlebtn {
+    height: 60%;
+    filter: brightness(4);
+    float: left;
+    vertical-align: middle;
+}
+#contactRow h2 { float: left;
+    margin-left: 32px;
+
+}#contactRow h2:first-child { float: left;
+    margin-left: 0;
+    
+}
+#contactRow a {
+    margin-left: 32px; 
+    float: left;
+    color: white;
+    text-decoration: none;
+    height: 100px;
+    flex :1 ;
+    
+    font-weight: 100;
+    font-size: 4em;
 }
