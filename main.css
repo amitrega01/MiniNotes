@@ -9,11 +9,11 @@ body {
 h1 {
     max-width: inherit;
     color: white;
-   font-size: 10em;
+   font-size: 10vw;
 }
 h2 {
     color: white;
-   font-size: 4em;
+   font-size: 4vw;
    font-weight: 100;
 
 }
@@ -36,10 +36,10 @@ h2 {
     float: left;
     max-width: 250px;
     color: white;
-    font-size: 2em;
+    font-size: 2vw;
     font-weight: 100;
     text-align: left;
-    line-height: 1.5em;
+    line-height: 1.5vw;
 }
 #contactRow {
     position: relative;
@@ -69,5 +69,5 @@ h2 {
     flex :1 ;
     
     font-weight: 100;
-    font-size: 4em;
+    font-size: 4vw;
 }
